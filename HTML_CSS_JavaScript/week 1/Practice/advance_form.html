@@ -1,0 +1,50 @@
+<!Doctype html>
+<html>
+<head>
+	<title>Advance Form</title>
+	<style type="text/css">
+		p{font-size: 30px}
+	</style>
+</head>
+<body>
+	<div style='background:red;	position:absolute; left:100px;'>
+
+	<form action='http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php' method='get'>
+		<h1>Enter your details</h1>
+
+		<label for='firstname'>FirstName : </label>
+		<input type='text' id='firstname' value='sid' required autofocus name='firstname'><br>
+		<label for='lastname'>LastName : </label>
+		<input type='text' id='lastname' placeholder='Enter your last name' required name='lastname'><br>
+
+		<p>Please choose you city.</p>
+		<label for='city'>City : </label>
+		<select name='city' id='city'>
+			<option value='Delhi'>Delhi</option>
+			<option value='Mumbai'>Mumbai</option>
+			<option value='Chennai'>Chennai</option>
+		</select>
+
+		<p>What are your skills?</p>
+		<input type='checkbox' value='html' name='skills'>HTML<br>
+		<input type='checkbox' value='css' name='skills'>CSS<br>
+		<input type='checkbox' value='javascript' name='skills'>JavaScript<br>
+
+		<p>How tall are you?</p>
+		<input type='radio' value='tall' name='height'>Tall<br>
+		<input type='radio' value='medium' name='height'>medium<br>
+		<input type='radio' value='short' name='height'>short<br>
+
+		<p>Select your profile pic</p>
+		<input type='file' name='file'><br><br>
+
+		<p>Enter your password</p>
+		<label for='password'>Password : </label>
+		<input type='password' id='password' required name='password'><br><br>
+		<p>Tell us about yourself</p>
+		<textarea rows='5' cols='50' name='description'>Enter your description</textarea><br>
+		<input type='submit' value='send'><br>
+	</form>
+	</div>
+</body>
+</html>

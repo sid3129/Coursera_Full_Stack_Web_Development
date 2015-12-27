@@ -1,0 +1,26 @@
+<!Doctype html>
+<html>
+<head>
+	<title>new input elements</title>
+</head>
+<body>
+	<form action='http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php' method='get'>
+		<label for='my_color'>Color : </label>
+		<input type='color' name='my_color' id='my_color'><br>
+
+		<label for='height'>Height : </label>
+		short<input type='range' min='0' max='100' step='10' value='30' id='height' name='height'>tall<br>
+
+		<label for='date'>DOB : </label>
+		<input type='date' id='date' name='date'><br>
+
+		<label for='time'>Time : </label>
+		<input type='time' id='time' name='time'><br>
+
+		<label for='weight'>Weight : </label>
+		<input type='number' id='weight' name='weight'><br>
+
+		<input type='submit' value='send'>
+	</form>
+</body>
+</html>
