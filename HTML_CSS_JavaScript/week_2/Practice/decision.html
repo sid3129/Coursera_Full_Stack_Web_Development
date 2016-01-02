@@ -1,0 +1,85 @@
+<!Doctype  html>
+<html>
+<head>
+	<title>Decisions</title>
+</head>
+<body>
+	<script type="text/javascript">
+	function function1()
+	{
+		var ctr = true;
+		if(ctr)
+			alert('yes');
+		else
+			alert('no');
+	}
+
+	function function2()
+	{
+		var marks = prompt('Enter marks : ');
+		if(marks>90)
+			alert('A');
+		else if (marks>80)
+			alert('B');
+		else if (marks>70)
+			alert('C');
+		else
+			alert('D');
+	}
+
+	function function3()
+	{
+		var grade = prompt('Enter grade : ');
+		switch(grade)
+		{
+			case 'A':{
+						alert('excellent');
+						break;
+					}
+			case 'B':{
+						alert('good');
+						break;
+					}
+			case 'C':{
+						alert('average');
+						break;
+					}
+			case 'D':{
+						alert('poor');
+						break;
+					}
+			default:{
+						alert('invalid');
+						break;
+					}
+		} 
+	}
+
+	function function4()
+	{
+		var grade = prompt('Enter grade : ');
+		switch(grade)
+		{
+			case 'A':
+			case 'B':{
+						alert('good');
+						break;
+					}
+			case 'C':			
+			case 'D':{
+						alert('poor');
+						break;
+					}
+			default:{
+						alert('invalid');
+						break;
+					}
+		} 
+	}
+	function1();
+	function2();
+	function3();
+	function4();
+	</script>
+</body>
+</html>

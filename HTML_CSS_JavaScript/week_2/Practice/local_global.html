@@ -1,0 +1,47 @@
+<!Doctype html>
+<html>
+<head>
+	<title>Local and global variables</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var x = 10;
+		console.log('Inside main x is : '+ x);
+		function function1()
+		{
+			console.log('Inside function1 x is : '+ x);
+			x++;
+		}
+		function1();
+		console.log('Inside main x is : '+ x);
+		
+		console.log('*****************');
+
+
+
+		//console.log('Inside main y is : '+ y);	error
+		function2();
+		function function2()
+		{
+			var y = 20;
+			console.log('Inside function2 y is : '+ y);
+			y++;
+		}
+		//console.log('Inside main y is : '+ y);	error
+
+		console.log('*****************');
+
+		//console.log('Inside main z is : '+ z);	error
+		function function3()
+		{
+			z = 30;
+			console.log('Inside function3 z is : '+ z);
+			z++;
+		}
+		//console.log('Inside main z is : '+ z);	error
+		function3();
+		console.log('Inside main z is : '+ z);
+
+	</script>
+</body>
+</html>

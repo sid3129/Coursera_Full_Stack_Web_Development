@@ -1,0 +1,75 @@
+<!Doctype>
+<html>
+<head>
+	<title>Date Me!</title>
+	<style type="text/css">
+		label:hover{font-size: 20px}
+		input:hover{font-size: 20px}
+		textarea:hover{font-size: 20px}
+		fieldset{background: lightyellow ;border: 10px solid yellow;margin-bottom: 10px;width: 720px}
+		label{width: 180px; vertical-align: top; text-align: right;display: inline-block;}
+		textarea{width: 360px;height: 50px}
+		.range_word_left{text-align: center;background: brown;color: white;padding: 5px;width: 50px;display: inline-block;}
+		.range_word_right{text-align: center;background: purple;color: white;padding: 5px;width: 50px;display: inline-block;}
+		.sp_label{width: auto;}
+		.sp_label:hover{font-size: 20px}
+	</style>
+</head>
+<body>
+	<form action='https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php' method='post' enctype='multipart/form-data'>
+		<h1>Please Enter Your Details For Our Dating Website!</h1>
+		<fieldset>
+			<legend>Your Face</legend>
+			<label for='avatar'>Your Image:</label>
+			<input type='file' name='avatar' id='avatar' required><br>
+			<label for='preview'>Image Preview:</label>
+			<img src="" name='preview' id='preview'>
+		</fieldset>
+		<fieldset>
+			<legend>Your General Details</legend>
+			<label for='name'>Name:</label>
+			<input type='text' name='name' id='name' placeholder='Your full name' required><br>
+			<label for='gender'>Gender:</label>
+			<input type='radio' name='gender' id='gender' value='male' required><span  class='sp_label'>Male</span>
+			<input type='radio' name='gender' id='gender' value='female' required><span  class='sp_label'>Female</span><br>
+			<label for='age'>Age:</label>
+			<input type='number' id='age' name='age' required><br>
+			<label for='date'>Date of Birth:</label>
+			<input type='date' id='date' name='date' ><br>
+			<label for='fav_color'>Favourite Color:</label>
+			<input type='color'id='fav_color' name='fav_color'><br>
+			<label for='country'>Which Country:</label>
+			<select name='country' id='country'>
+				<option value='null'>No selection</option>
+				<option value='India'>India</option>
+				<option value='USA'>USA</option>
+				<option value='Russia'>Russia</option>
+				<option value='China'>China</option>
+				<option value='France'>France</option>
+			</select>
+		</fieldset>
+		<fieldset>
+			<legend>Your Indicators</legend>
+			<label for='height'>Height:</label>
+			<span class='range_word_left'>Short</span><input type='range' id='height' name='height' min='0' max='100' step='5'><span class='range_word_right'>Tall</span><br>
+			<label for='salary'>Salary:</label>
+			<span class='range_word_left'>Poor</span><input type='range' id='salary' name='salary' min='0' max='100' step='5'><span class='range_word_right'>Rich</span>
+		</fieldset>
+		<fieldset>
+			<legend>Your Contact Information</legend>
+			<label for='email'>Email:</label>
+			<input type='email' id='email' name='email' required><br>
+			<label for='mobile'>Mobile:</label>
+			<input type='tel' id='mobile' name='mobile'><br>
+			<label for='address'>Address:</label>
+			<textarea name='address' id='address'></textarea><br>
+			<label for='contact_method' class='sp_label'>Method to contact you:</label>
+			<input type='checkbox' name='contact_method' id='contact_method' value='Email'><span class='sp_label'>Email</span>
+			<input type='checkbox' name='contact_method' id='contact_method' value='Whatsapp'><span class='sp_label'>Whatsapp</span>
+			<input type='checkbox' name='contact_method' id='contact_method' value='In-app chat'><span class='sp_label'>In-app chat</span><br>
+		</fieldset>
+		<input type='submit' value='submit'>
+	</form>
+	<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+</body>
+</html>

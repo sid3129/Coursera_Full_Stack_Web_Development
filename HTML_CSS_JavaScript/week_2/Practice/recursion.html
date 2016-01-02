@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+	<title>factorial</title>
+	<script type="text/javascript">
+		function find_factorial(num)
+		{
+			if(num == 0)
+				return 1;
+			else if(num>0)
+				return num * find_factorial(num-1);
+		}
+
+		var ans = find_factorial(5);
+		console.log(ans);
+	</script>
+</head>
+</html>

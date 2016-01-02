@@ -1,0 +1,35 @@
+<!Doctype html>
+<html>
+<head>
+	<title>
+		Logical operators
+	</title>
+</head>
+<body>
+	<script type="text/javascript">
+	var a = true;
+	var b = false;
+
+	console.log('and ' +(a && b));
+	console.log('or ' +(a || b));
+
+
+	function function1()
+	{
+		console.log('function1 executed');
+		return true;
+	}
+	function function2()
+	{
+		console.log('function2 executed');
+		return false;
+	}
+
+	console.log('and ' + (function1() && function2()));
+	console.log('short and ' + (function2() && function1()));
+
+	console.log('or ' + (function2() || function1()));
+	console.log('short or ' + (function1() || function2()));
+	</script>
+</body>
+</html>

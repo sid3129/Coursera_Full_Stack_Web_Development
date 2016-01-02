@@ -1,0 +1,14 @@
+h1{background: yellow;	color: purple;text-align: center;}
+p{background: green;	color: white;	font-size: 25px; text-align: left;}
+
+#my_list{background-color: black;font-size: 50px}
+
+#red{color: red;background-color: blue}
+#green{color: green}
+#yellow{color: yellow}
+#blue{color: blue}
+#purple{color: purple}
+
+.para_style_1{color: white;background-color: black}
+.para_style_2{color: blue;background-color: yellow}
+.my_class{font-size: 10px}

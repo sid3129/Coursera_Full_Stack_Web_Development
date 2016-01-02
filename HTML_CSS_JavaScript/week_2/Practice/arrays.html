@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+	<title>
+		Working on arrays
+	</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var x = [1,2,3,'A'];
+		console.log(typeof x);
+		console.log(x);
+		
+
+		var y = new Array(10);
+		console.log(typeof y);
+		console.log(y);
+		
+
+
+		//join
+		console.log(x.join(' and '));
+		console.log(x.join());
+		//access
+		console.log(x[1]);
+		console.log(x[3]);
+		//length
+		console.log(x.length);
+		console.log(y.length);
+		//appending to end
+		x.push('B');
+		console.log(x);
+		//appedning to start
+		x.unshift('C');
+		console.log(x);
+		//deleting from last
+		x.pop();
+		console.log(x);
+		//deleting to start
+		x.shift();
+		console.log(x);
+
+
+		y=['a','b','c','d'];
+		console.log(y.length);
+		console.log(y)
+		console.log(y.concat(x));//does not changes y 
+		console.log(y.length);
+		console.log(y)
+
+
+	</script>
+</body>
+</html>

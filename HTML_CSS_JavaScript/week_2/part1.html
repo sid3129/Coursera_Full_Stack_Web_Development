@@ -1,0 +1,36 @@
+<!Doctype html>
+<html>
+<head>
+	<title>Color Game Part 1</title>
+	<script type="text/javascript">
+		var colors = ['Yellow','Aqua','Violet','Orange','Indigo','SpringGreen','Purple','Crimson','Blue','Cyan','Red','Lime'];
+		var target;
+		var user_input;
+		var guesses = 0;
+	
+		success = false;
+
+		function do_game()
+		{
+			colors = colors.sort();
+			target = Math.random()*colors.length;
+			target = Math.floor(target);
+
+			alert('The color is : ' + colors[target]);
+			while(success == false)
+			{
+				guesses++;
+				user_input = prompt('I am thinking of one of these colors:'+
+									'\n\n'+
+									colors.join()+
+									'\n\n'+
+									'What color am I thinking of?');
+				if(user_input == colors[target])
+					success = true;
+			}
+		}
+	</script>
+</head>
+<body onload = do_game()>
+</body>
+</html>
