@@ -1,7 +1,7 @@
 <!Doctype html>
 <html>
 <head>
-	<title>Color Game Part 1</title>
+	<title>Color Game Part 2</title>
 	<script type="text/javascript">
 		var colors = ['Yellow','Aqua','Violet','Orange','Indigo','SpringGreen','Purple','Crimson','Blue','Cyan','Red','Lime'];
 		var target;
@@ -24,8 +24,7 @@
 				user_input = prompt('I am thinking of one of these colors:'+'\n\n'+colors.join()+'\n\n'+'What color am I thinking of?');
 				success = check_guess();
 			}
-			var my_body = document.getElementsByTagName('body')[0];
-			my_body.style.background = user_input;
+
 		}
 
 		function check_guess()
@@ -46,7 +45,11 @@
 				return false;
 			}
 			else
-			{
+			{	
+				var my_body = document.getElementsByTagName('body')[0];
+				my_body.style.background = user_input;
+
+
 				alert('Congratulations! You have guessed the color!'+'\n\n'+'It took you '+guesses+' to finish the game!'+'\n\n'+'You can see the color in background.');
 
 				return true;
