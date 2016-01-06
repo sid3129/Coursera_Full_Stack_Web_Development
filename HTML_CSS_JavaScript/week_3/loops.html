@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+	<title>For Loops</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var alphabets=['a','b','c','d','e'];
+		for(var i =0; i<alphabets.length;i++)
+			console.log(alphabets[i]);
+
+		console.log('************');
+		for(var i in alphabets)
+		{
+			console.log(i +' : ' + alphabets[i]);
+		}
+
+		console.log('************');
+		for(var i of alphabets)
+		{
+			console.log(i);
+		}
+
+		console.log('**************')
+		var ob = {firstname:'Siddarth',lastname:'Goyal'};
+		for(var i in ob)
+		{
+			console.log(i +' : '+ob[i]);
+		}
+	</script>
+</body>
+</html>
