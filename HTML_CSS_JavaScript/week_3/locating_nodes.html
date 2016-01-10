@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+	<title>Locating nodes</title>
+	<script type="text/javascript">
+		function change_color_1()
+		{
+			var node = document.childNodes[1].childNodes[2].childNodes[1];
+			node.style.color='green';
+		}
+		function change_color_2()
+		{
+			var node = document.getElementsByTagName('h1')[1];
+			node.style.color='red';
+		}
+		function change_color_3()
+		{
+			var node = document.getElementById('heading');
+			node.style.color='orange';
+		}
+	</script>
+</head>
+<body>
+	<h1> Senorita </h1>
+	<h1> Senorita </h1>
+	<h1 id = 'heading'> Senorita </h1>
+	<button onclick='change_color_1()'>Type 1</button><br>
+	<button onclick='change_color_2()'>Type 2</button><br>
+	<button onclick='change_color_3()'>Type 3</button><br>
+</body>
+</html>

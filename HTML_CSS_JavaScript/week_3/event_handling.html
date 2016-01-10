@@ -1,0 +1,32 @@
+<!doctype>
+<html>
+<head>
+	<title>Javascript event handling</title>
+	<script type="text/javascript">
+		function my_func1()
+		{
+			console.log('siddarth');
+		}
+		function my_func2(str)
+		{
+			console.log(str);
+		}
+		window.onload = my_func1; //method 1
+	</script>
+</head>
+<body  id='my_body'>
+	<h1>Hello World</h1>
+	<script type="text/javascript">
+		var my_node = document.getElementById('my_body');
+		my_node.addEventListener("load",my_func2('a1')); //method 2
+		my_node.addEventListener("load",my_func2('b2')); //method 2
+		my_node.addEventListener("load",my_func2('c3')); //method 2
+
+		my_node.removeEventListener("load",my_func2('c3')); 
+
+		
+
+
+	</script>
+</body>
+</html>

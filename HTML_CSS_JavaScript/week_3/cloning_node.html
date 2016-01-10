@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+	<title>Cloning nodes</title>
+	<script type="text/javascript">
+		function my_func1()
+		{
+			var node = document.getElementsByTagName('li')[0];
+			var clone = node.cloneNode(false);
+			node.parentNode.appendChild(clone); 
+		}
+
+		function my_func2()
+		{
+			var node = document.getElementsByTagName('li')[0];
+			var clone = node.cloneNode(true);
+			node.parentNode.appendChild(clone); 
+		}
+		/*
+		cloneNode(false);	//copying a node
+		cloneNode(true);	//copying a branch
+		*/
+
+
+
+	</script>
+</head>
+<body>
+	<ul>
+		<li>orange</li>
+		<li>red</li>
+		<li>green</li>
+		<li>blue</li>
+	</ul>
+	<button onclick='my_func1()' >1</button>
+	<button onclick='my_func2()' >2</button>
+	<button onclick='my_func3()' >3</button>
+</body>
+</html>

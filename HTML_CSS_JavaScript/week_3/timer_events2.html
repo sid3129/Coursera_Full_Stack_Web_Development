@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+	<title>Timer Events</title>
+	<script type="text/javascript">
+	 var my_timer;
+	 var x = 1;
+	 my_timer = setInterval(repeat_me,1000);
+	 function repeat_me () 
+	 {
+	 	console.log(x);
+	 	x++;
+	 }
+	</script>
+</head>
+<body>
+	<button onclick='clearInterval(my_timer)'>Stop me</button>
+</body>
+</html>

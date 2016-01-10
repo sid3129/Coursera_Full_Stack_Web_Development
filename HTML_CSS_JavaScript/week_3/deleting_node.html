@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+	<title>Deleting nodes</title>
+	<script type="text/javascript">
+		/*
+			removeChild()
+		*/
+
+		function my_func1()
+		{
+			var node = document.getElementsByTagName('li')[0];
+			node.parentNode.removeChild(node);
+		}
+
+		function my_func2()
+		{
+			var node = document.getElementById('element');
+			node.parentNode.removeChild(node);
+		}
+
+		function my_func3()
+		{
+			var parent_node = document.getElementsByTagName('ul')[0];
+			parent_node.removeChild(parent_node.lastChild);
+		}
+	</script>
+</head>
+<body>
+	<ul>
+		<li>Red</li>
+		<li id='element'>Yellow</li>
+		<li>Green</li>
+	</ul>
+	<button onclick='my_func1()' >1</button>
+	<button onclick='my_func2()' >2</button>
+	<button onclick='my_func3()' >3</button>
+</body>
+</html>

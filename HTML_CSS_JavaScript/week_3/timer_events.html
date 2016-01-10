@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+	<title>Timer Events</title>
+	<style type="text/css">
+		img{width:100px; height:100px; position: absolute;}
+	</style>
+	<script type="text/javascript">
+		var x=0,node,my_timer;
+		function my_func()
+		{	
+			console.log('a');
+			node= document.getElementById('dragon');
+			x++;
+			node.style.left = x+'px';
+			my_timer = setTimeout(my_func, 50);
+		}
+	
+	</script>
+</head>
+<body onload='my_func()'>
+	<img id='dragon' src="dragon.jpg" >
+	<button onclick='clearTimeout(my_timer)'>click me</button>
+</body>
+</html>
+
+
+
+
+            
+         

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+	<title>Creating Nodes</title>
+	<script type="text/javascript">
+
+		/*
+		document.createElement()
+		document.createTextNode()
+		document.getElementsByTagName()
+		document.getElementById()
+		appendChild()
+		insertBefore()
+		*/
+
+
+		function my_func()
+		{
+			var new_node = document.createElement('hr');
+			var dest_node = document.getElementsByTagName('body')[0];
+			dest_node.insertBefore(new_node , dest_node.firstChild);
+		}
+
+		function my_func2()
+		{
+			var new_node = document.createElement('p');
+			var text_node = document.createTextNode('hello siddarth');
+			new_node.appendChild(text_node);
+			var dest_node = document.getElementsByTagName('body')[0];
+			dest_node.insertBefore(new_node , dest_node.firstChild);
+		}
+
+		function my_func3()
+		{
+			var text_node = document.createTextNode('this is added dynamically');
+			var dest_node = document.getElementsByTagName('h1')[0];
+			dest_node.appendChild(text_node);
+
+		}	
+	</script>
+</head>
+<body>
+	<h1>Siddarth Goyal</h1>
+	<button onclick='my_func()' >add hr</button>
+	<button onclick='my_func2()' >add p</button>
+	<button onclick='my_func3()' >add text</button>
+</body>
+</html>

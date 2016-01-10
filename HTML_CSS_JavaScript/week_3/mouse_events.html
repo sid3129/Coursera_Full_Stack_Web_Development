@@ -1,0 +1,35 @@
+<!doctype>
+<html>
+<head>
+	<title>Mouse Events</title>
+	<script type="text/javascript">
+		/*
+		onclick
+		onmousedown
+		onmouseup
+		onmouseover
+		onmouseout
+		*/
+
+		/*
+		<button value = 'click me!'></button>
+		*/
+
+		function my_func1()
+		{
+			var node = document.getElementById('change_my_color');
+			node.style.color='red';
+		}
+
+		function my_func2()
+		{
+			var node = document.getElementById('change_my_color');
+			node.style.color='green';
+		}
+	</script>
+</head>
+<body>
+	<h1 id='change_my_color' onmouseover='my_func1()' onmouseout='my_func2()'>Hello World 1</h1><br>
+	<h1 onclick='alert("hey")'>Hello World 2</h1><br>
+</body>
+</html>

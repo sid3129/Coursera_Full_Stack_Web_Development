@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+	<title>Node Relationships</title>
+	<script type="text/javascript">
+		function attachHandler(node)
+		{
+			if(node==null)
+				return;
+			node.onclick = handleClick;//function call without parenthesis
+			for(var i=0;i<node.childNodes.length;i++)
+				attachHandler(node.childNodes[i]);
+		}
+
+		function handleClick(event)
+		{
+			event.stopPropagation();
+			var node = event.target;
+			var node_path = node.nodeName;
+			while(node.parentNode)
+			{
+				node = node.parentNode;
+				node_path = node.nodeName + ' > ' + node_path
+			}
+			console.log(node_path);
+			
+		}
+		
+		function init() 
+		{
+            attachHandler(document.getElementsByTagName("body")[0]);
+        }
+	</script>
+</head>
+<body onload='init()'>
+	<h1>Universal Public School</h1>
+	I have so many memories there.
+	<br>
+	<p>It is a great school.</p>
+	<hr>
+	<ol>
+		<li>a</li>
+		<li>b</li>
+		<li>c</li>
+		<li>d</li>
+		<li>
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+			</ul>
+		</li>
+	</ol>
+</body>
+</html>
